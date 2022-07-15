@@ -24,8 +24,6 @@ public class Location {
     @OneToMany(mappedBy="location", fetch = FetchType.LAZY)
     @JsonIgnore
     private List<Entry> entries;
-
-    private String name;
     
     public Long getId(){
         return id;
@@ -43,12 +41,12 @@ public class Location {
         this.entries = entries;
     }    
 
-    public void setName(String name){
-        this.name = name;
+    public void setTitle(String title){
+        this.title = title;
     }
 
-    public String getName(){
-        return name;
+    public String getTitle(){
+        return title;
     }
 
 }
