@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Punchclock Client</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="script.js" type="application/javascript"></script>
+    </head>
+    <body>
+        <form id="createEntryForm">
+            <label for="checkIn">Check in</label>
+            <input type="datetime-local" name="checkIn" id="checkIn" required>
+            <label for="checkOut">Check out</label>
+            <input type="datetime-local" name="checkOut" id="checkOut" required>
+            <p id="error" style="color:orange;"></p>
+            <label for="category">Choose a Category:</label>
+            <select id="category" name="category">
+              <option value="it">IT</option>
+              <option value="hr">HR</option>
+              <option value="sale">Sale</option>
+              <option value="purchase">Purchase</option>
+              <option value="stock">Stock departement</option>
+            </select>
+            <p id="error" style="color:orange;"></p>
+            <label for="location">Choose a Location:</label>
+            <select id="location" name="location">
+              <option value="zuerich">Zürich</option>
+              <option value="bern">Bern</option>
+              <option value="basel">Basel</option>
+              <option value="winterthur">Winterthur</option>
+              <option value="other">Other</option>
+            </select>
+            <p id="error" style="color:orange;"></p>
+            <input type="submit" value="Save"/>
+            <br>
+            <a href="index.html">Logout</a>
+        </form>
+        <form id="updateEntryForm" style="display:none">
+            <button onclick="closeUpdateEntryForm()">Close</button>
+            <p>Edit entry:</p>
+            <input type="hidden" id="idUpdate" name="id">
+            <label for="checkIn">Check in</label>
+            <input type="datetime-local" name="checkIn" id="checkInUpdate" required>
+            <label for="checkOut">Check out</label>
+            <input type="datetime-local" name="checkOut" id="checkOutUpdate" required>
+            <p id="errorUpdate" style="color:orange;"></p>
+            <input type="submit" value="Update" />
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Check in</th>
+                    <th>Check out</th>
+                    <th>Delete/Edit&nbsp;&nbsp;&nbsp;</th>
+                    <th>Category&nbsp;&nbsp;&nbsp;</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody id="entryDisplay">
+                <tr>
+                    <td colspan="3">Loading...</td>
+                </tr>  
+            </tbody>
+        </table>
+    </body>
+</html>

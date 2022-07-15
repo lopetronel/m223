@@ -1,0 +1,95 @@
+body {
+        font-family: 'Roboto';
+    }
+    
+    html, body {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        place-items: center;
+        background: rgb(44, 154, 214);
+        background: linear-gradient(90deg, rgb(44, 154, 214) 0%, rgb(44, 154, 214) 35%, rgb(192, 147, 236) 100%);
+    
+    }
+    
+    .center-content {
+        width: 350px;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px 1px rgba(0,0,0,.12);
+        border-radius: 5px;
+        background-color: white;
+    }
+    
+    .center-content h1 {
+        text-align: center;
+    }
+    
+    .center-content label {
+        display: block;
+        margin: 20px auto 5px auto;
+        color: rgba(0,0,0,.8);
+    }
+    
+    .center-content input[type=passwort],
+    .center-content input[type=username] {
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #eee;
+    }
+    
+    .center-content .not-register,
+    .center-content .forget-password {
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    .center-content .not-register a,
+    .center-content .forget-password a {
+        text-decoration: none;
+        color: deeppink;
+    }
+    
+    .center-content .not-register a:hover,
+    .center-content .forget-password a:hover {
+        text-decoration: underline;
+    }
+    
+    .center-content input[type=submit] {
+        width: 90%;
+        display: block;
+        margin: auto;
+        padding: 15px;
+        border: none;
+        background: rgb(44, 154, 214);
+        background: linear-gradient(90deg, rgb(44, 154, 214) 0%, rgb(44, 154, 214) 35%, rgb(192, 147, 236) 100%);
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .center-content input[type=submit]:hover {
+        background: rgb(44, 154, 214);
+        background: linear-gradient(90deg, rgb(192, 147, 236) 0%, rgb(44, 154, 214) 35%, rgb(44, 154, 214) 100%);
+    }
+    
+    .center-content input[type=password]:hover,
+    .center-content input[type=password]:focus,
+    .center-content input[type=email]:hover,
+    .center-content input[type=email]:focus {
+        outline: none;
+        animation: color 5s infinite;
+    }
+    
+    @keyframes color {
+        from {
+            border-bottom: 2px solid rgb(255,20,147);
+        }
+        to {
+            border-bottom: 2px solid rgb(20, 67, 255);
+        }
+    }

@@ -21,7 +21,7 @@ const createEntry = (e) => {
     let data = {};
     data["checkIn"] = formData.get("checkIn");
     data["checkOut"] = formData.get("checkOut");
-            
+             
 
     fetch(`${URL}/entries`, {
         method: 'POST',
