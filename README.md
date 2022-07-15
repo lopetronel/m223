@@ -19,3 +19,12 @@ Datenquelle: jdbc:h2:mem:punchclock
 Benutzername: zli
 Passwort: zli
 
+Informationen von Leon Lopetrone:
+Die Applikation führt zu einem Login bei dem man sich anmelden kann nachdem der quarkus gestartet wurde.
+Falls man noch keinen Account hat kann man einen unter SignUp erstellen.
+Nach dem erfolgreichen Anmelden kommt man auf die main.html seite auf der man seine PunchClock Daten eingeben kann
+inklusive Location und Category. 
+Diese Daten werden gespeichert und angezeigt.
+Bei einem doppelclick auf DELETE wird der gewählte Eintrag gelöscht.
+Das Editieren ist aus Zeitgründen für nur die Zeiteingaben verfügbar weshalb die Funktion noch nicht ganz funtioniert.
+Beim Klicken auf Update muss der quarkus neu gestartet werden.
