@@ -11,7 +11,14 @@ import ch.zli.m223.punchclock.service.CategoryService;
 import ch.zli.m223.punchclock.service.LocationService;
 import io.quarkus.runtime.StartupEvent;
 
-
+/*
+ * Autor: Leon Lopetrone
+ * Version 1.0
+ * Date: 15.07.2022
+ * 
+ * Class which is responible for setting up the Dropdown values
+ * 
+ */
 @Singleton
 public class StartUp {
     @Inject
